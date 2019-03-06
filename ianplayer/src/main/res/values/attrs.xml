@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Must be kept in sync with AspectRatioFrameLayout -->
+    <attr name="ply_ui_resize_mode" format="enum">
+        <enum name="fit" value="0"/>
+        <enum name="fixed_width" value="1"/>
+        <enum name="fixed_height" value="2"/>
+        <enum name="fill" value="3"/>
+    </attr>
+
+    <!-- Must be kept in sync with KRVideoView -->
+    <attr name="ply_ui_surface_type" format="enum">
+        <enum name="none" value="0"/>
+        <enum name="surface_view" value="1"/>
+        <enum name="texture_view" value="2"/>
+    </attr>
+    <attr name="ply_ui_show_timeout" format="integer"/>
+    <attr name="ply_ui_rewind_increment" format="integer"/>
+    <attr name="ply_ui_fastforward_increment" format="integer"/>
+    <attr name="ply_ui_player_layout_id" format="reference"/>
+    <attr name="ply_ui_controller_layout_id" format="reference"/>
+    <attr name="ply_ui_orientation_only_landscape" format="boolean"/>
+
+    <declare-styleable name="ply_ui_PlayerView">
+        <attr name="ply_ui_use_artwork" format="boolean"/>
+        <attr name="ply_ui_default_artwork" format="reference"/>
+        <attr name="ply_ui_use_controller" format="boolean"/>
+        <attr name="ply_ui_hide_on_touch" format="boolean"/>
+        <attr name="ply_ui_resize_mode"/>
+        <attr name="ply_ui_surface_type"/>
+        <attr name="ply_ui_show_timeout"/>
+        <attr name="ply_ui_rewind_increment"/>
+        <attr name="ply_ui_fastforward_increment"/>
+        <attr name="ply_ui_player_layout_id"/>
+        <attr name="ply_ui_controller_layout_id"/>
+        <attr name="ply_ui_orientation_only_landscape"/>
+        <attr name="ply_ui_ratio" format="float"/>
+    </declare-styleable>
+
+    <declare-styleable name="ply_ui_ControlView">
+        <attr name="ply_ui_show_timeout"/>
+        <attr name="ply_ui_rewind_increment"/>
+        <attr name="ply_ui_fastforward_increment"/>
+        <attr name="ply_ui_controller_layout_id"/>
+        <attr name="ply_ui_orientation_only_landscape"/>
+    </declare-styleable>
+
+    <declare-styleable name="ply_ui_TimeBar">
+        <attr name="ply_ui_bar_height" format="dimension"/>
+        <attr name="ply_ui_touch_target_height" format="dimension"/>
+        <attr name="ply_ui_scrubber_enabled_size" format="dimension"/>
+        <attr name="ply_ui_scrubber_disabled_size" format="dimension"/>
+        <attr name="ply_ui_scrubber_dragged_size" format="dimension"/>
+        <attr name="ply_ui_played_color" format="color"/>
+        <attr name="ply_ui_played_start" format="color"/>
+        <attr name="ply_ui_played_end" format="color"/>
+        <attr name="ply_ui_scrubber_color" format="color"/>
+        <attr name="ply_ui_buffered_color" format="color"/>
+        <attr name="ply_ui_unplayed_color" format="color"/>
+    </declare-styleable>
+</resources>

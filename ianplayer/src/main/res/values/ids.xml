@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="c_toolbar" type="id"/>
+    <item name="c_back" type="id"/>
+    <item name="c_title" type="id"/>
+</resources>

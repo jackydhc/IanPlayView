@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Widget Style -->
+    <style name="c_KRProgressBar">
+        <item name="android:indeterminateDrawable">@drawable/c_progress_large_v21</item>
+    </style>
+
+    <style name="c_KRProgressBar.Large">
+        <item name="android:maxWidth">@dimen/c_size_48</item>
+        <item name="android:maxHeight">@dimen/c_size_48</item>
+        <item name="android:minWidth">@dimen/c_size_48</item>
+        <item name="android:minHeight">@dimen/c_size_48</item>
+    </style>
+</resources>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="c_gray_dark">#999999</color>
+    <color name="c_gray_trans">#44999999</color>
+    <color name="c_gray_light">#dcdcdc</color>
+
+    <!-- Theme START -->
+    <color name="c_theme_color_primary">#fb7299</color>
+    <color name="c_theme_color_primary_dark">#b85671</color>
+    <color name="c_theme_color_primary_trans">#99f0486c</color>
+    <color name="c_theme_color_secondary">#fb7299</color>
+
+    <!-- Blue -->
+    <color name="c_blue">#2196F3</color>
+    <color name="c_blue_dark">#1565C0</color>
+    <color name="c_blue_trans">#B41A78C3</color>
+    <!-- Theme END -->
+
+    <!-- Widget START -->
+    <color name="c_widget_default_dark">#F95355</color>
+    <!-- Progress -->
+    <color name="c_progress_app_light">#4285F4</color>
+    <color name="c_progress_secondary_app_light">#334285F4</color>
+    <color name="c_progress_background_app_light">#F4F4F4</color>
+    <!-- Divider -->
+    <color name="c_divider_app_light">#F0F0F0</color>
+    <!-- Image Place Holder -->
+    <color name="c_image_place_holder_light">#F0F0F0</color>
+    <color name="c_list_selector">#f2f2f2</color>
+    <!-- Widget END -->
+
+    <!-- Font START -->
+    <!-- font_app_main: toolbar | setting -->
+    <color name="c_font_app_main">#464C56</color>
+    <color name="c_font_app_minor">#969FA9</color>
+    <!-- dialog: share | pay -->
+    <color name="c_font_dialog_main">#26292F</color>
+    <color name="c_font_dialog_minor">@color/c_font_app_minor</color>
+    <color name="c_font_dialog_action">@color/c_font_app_main</color>
+    <!-- Light Font -->
+    <color name="c_font_light">@android:color/white</color>
+    <!-- Settings -->
+    <color name="c_font_setting_exit">#4285F4</color>
+    <!-- Font END -->
+
+    <!-- Player START -->
+    <color name="c_player_main">#4285F4</color>
+    <!-- Playback -->
+    <color name="c_playback_playpause">@color/c_player_main</color>
+    <!-- Playback simple -->
+    <color name="c_playback_simple_border">#F0F0F0</color>
+    <color name="c_playback_simple_playpause">#464C56</color>
+    <!-- Player END -->
+
+    <!-- Up is old -->
+
+    <!-- New START -->
+    <!-- Color pool -->
+    <color name="c_theme_color_dark">#4285F4</color>
+    <color name="c_transparent">@android:color/transparent</color>
+    <color name="c_black">@android:color/black</color>
+    <color name="c_black_6">#0F000000</color>
+    <color name="c_black_12">#20000000</color>
+    <color name="c_black_50">#7F000000</color>
+    <color name="c_white">@android:color/white</color>
+    <color name="c_white_35">#59FFFFFF</color>
+    <color name="c_white_50">#7FFFFFFF</color>
+    <color name="c_white_60">#99FFFFFF</color>
+
+    <!-- Widget -->
+    <color name="c_widget_progress">#4285F4</color>
+    <color name="c_divide">#F0F0F0</color>
+
+    <!-- Font -->
+    <color name="c_font_main">#262626</color>
+    <color name="c_font_minor">#999CA0</color>
+    <color name="c_font_em">#5D04A4</color>
+
+    <!-- Gradient -->
+    <color name="c_blue_normal_start">#BB6CDF</color>
+    <color name="c_blue_normal_end">#5D04A4</color>
+    <color name="c_blue_disable_start">#CE9BE6</color>
+    <color name="c_blue_disable_end">#9258C0</color>
+
+    <color name="ply_ui_control_mask">@color/c_black_50</color>
+    <color name="ply_ui_played_color">#2E79F4</color>
+    <color name="ply_ui_played_start">#83C3FF</color>
+    <color name="ply_ui_played_end">#2E79F4</color>
+    <color name="ply_ui_audio_played_color">#FF191C</color>
+    <color name="ply_ui_audio_played_start">#FF7577</color>
+    <color name="ply_ui_audio_played_end">#FF191C</color>
+    <color name="ply_ui_scrubber_color">@color/c_white</color>
+    <color name="ply_ui_buffered_color">@color/c_white_60</color>
+    <color name="ply_ui_unplayed_color">@color/c_white_35</color>
+</resources>

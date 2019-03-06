@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="bottom"
+    android:background="@color/ply_ui_control_mask"
+    android:orientation="vertical"
+    >
+
+    <Space
+        android:id="@+id/extra_top"
+        android:layout_width="match_parent"
+        android:layout_height="12dp"
+        android:visibility="gone"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        >
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/ply_ui_exo_controls_back_description"
+            android:paddingEnd="5dp"
+            android:paddingLeft="18dp"
+            android:paddingRight="5dp"
+            android:paddingStart="18dp"
+            android:src="@drawable/ic_nav_back_dark"
+            android:visibility="gone"
+            tools:visibility="visible"
+            />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="18dp"
+            android:layout_marginRight="18dp"
+            android:ellipsize="end"
+            android:includeFontPadding="true"
+            android:singleLine="true"
+            android:textColor="@color/c_white"
+            android:textSize="17sp"
+            android:visibility="gone"
+            tools:text="小黄人演绎萌贱版监狱风云，《神偷奶爸3》发布新电视宣传片"
+            tools:visibility="visible"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="horizontal"
+        >
+
+       <ImageButton
+            android:id="@+id/ply_ui_exo_prev"
+            style="@style/ExoMediaButton.Previous"
+            android:contentDescription="@string/ply_ui_exo_controls_previous_description"
+            />
+
+        <ImageButton
+            android:id="@+id/ply_ui_exo_rew"
+            style="@style/ExoMediaButton.Rewind"
+            android:contentDescription="@string/ply_ui_exo_controls_rewind_description"
+            />
+
+        <ImageView
+            android:id="@+id/ply_ui_exo_play"
+            android:layout_width="@dimen/c_size_48"
+            android:layout_height="@dimen/c_size_48"
+            android:contentDescription="@string/exo_controls_play_description"
+            android:src="@drawable/exo_controls_play2"
+            />
+
+        <ImageView
+            android:id="@+id/ply_ui_exo_pause"
+            android:layout_width="@dimen/c_size_48"
+            android:layout_height="@dimen/c_size_48"
+            android:contentDescription="@string/exo_controls_pause_description"
+            android:src="@drawable/exo_controls_pause2"
+            />
+
+       <ImageButton
+            android:id="@+id/ply_ui_exo_ffwd"
+            style="@style/ExoMediaButton.FastForward"
+            android:contentDescription="@string/ply_ui_exo_controls_fastforward_description"
+            />
+
+        <ImageButton
+            android:id="@+id/ply_ui_exo_next"
+            style="@style/ExoMediaButton.Next"
+            android:contentDescription="@string/ply_ui_exo_controls_next_description"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        >
+
+        <Space
+            android:id="@+id/extra_left"
+            android:layout_width="10dp"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            tools:targetApi="ice_cream_sandwich"
+            tools:visibility="visible"
+            />
+
+        <TextView
+            android:id="@+id/ply_ui_exo_position"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:includeFontPadding="false"
+            android:paddingLeft="10dp"
+            android:paddingRight="8dp"
+            android:textColor="@color/c_white"
+            android:textSize="12sp"
+            tools:ignore="RtlHardcoded"
+            tools:text="2:23"
+            />
+
+        <com.ian.ianplayer.timebar.VideoTimeBar
+            android:id="@+id/ply_ui_exo_progress"
+            android:layout_width="0dp"
+            android:layout_height="33dp"
+            android:layout_weight="1"
+            app:ply_ui_bar_height="3dp"
+            app:ply_ui_buffered_color="@color/ply_ui_buffered_color"
+            app:ply_ui_played_color="@color/ply_ui_played_color"
+            app:ply_ui_played_end="@color/ply_ui_played_end"
+            app:ply_ui_played_start="@color/ply_ui_played_start"
+            app:ply_ui_scrubber_color="@color/ply_ui_scrubber_color"
+            app:ply_ui_scrubber_disabled_size="13dp"
+            app:ply_ui_scrubber_dragged_size="13dp"
+            app:ply_ui_scrubber_enabled_size="13dp"
+            app:ply_ui_unplayed_color="@color/ply_ui_unplayed_color"
+            />
+
+        <TextView
+            android:id="@+id/ply_ui_exo_duration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:includeFontPadding="false"
+            android:paddingEnd="10dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="10dp"
+            android:paddingStart="8dp"
+            android:textColor="@color/c_white"
+            android:textSize="12sp"
+            tools:text="4:03"
+            />
+
+        <Space
+            android:id="@+id/extra_middle"
+            android:layout_width="8dp"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            tools:targetApi="ice_cream_sandwich"
+            tools:visibility="visible"
+            />
+
+        <ImageView
+            android:id="@+id/exo_full"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:paddingEnd="10dp"
+            android:paddingLeft="2dp"
+            android:paddingRight="10dp"
+            android:paddingStart="2dp"
+            android:src="@drawable/ply_ui_exo_controls_full"
+            />
+
+        <Space
+            android:id="@+id/extra_right"
+            android:layout_width="10dp"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            tools:targetApi="ice_cream_sandwich"
+            tools:visibility="visible"
+            />
+    </LinearLayout>
+
+    <Space
+        android:id="@+id/extra_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="7dp"
+        android:visibility="gone"
+        />
+</LinearLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="c_base_state_empty">Empty</string>
+    <string name="c_base_state_error">Error</string>
+    <string name="ply_ui_exo_controls_previous_description">Previous track</string>
+    <string name="ply_ui_exo_controls_next_description">Next track</string>
+    <string name="ply_ui_exo_controls_pause_description">Pause</string>
+    <string name="ply_ui_exo_controls_play_description">Play</string>
+    <string name="ply_ui_exo_controls_stop_description">Stop</string>
+    <string name="ply_ui_exo_controls_rewind_description">Rewind</string>
+    <string name="ply_ui_exo_controls_fastforward_description">Fast forward</string>
+    <string name="ply_ui_exo_controls_replay_description">Replay</string>
+    <string name="ply_ui_exo_controls_share_description">Share</string>
+    <string name="ply_ui_exo_controls_back_description">Back</string>
+
+    <string name="ply_ui_tips">您正在使用非Wi-Fi网络，播放将消耗流量</string>
+    <string name="ply_ui_tips_action">继续播放</string>
+</resources>

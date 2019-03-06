@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Transparent -->
+    <style name="c_Transparent" parent="c_AppTheme">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+    <!-- Base application theme -->
+    <style name="c_AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here -->
+
+        <!-- for library use when is in night theme-->
+        <!--<item name="themeColorSecondary">@color/theme_color_secondary</item>-->
+        <item name="colorPrimary">@color/c_white</item>
+        <item name="colorPrimaryDark">@color/c_white</item>
+        <item name="colorAccent">@color/c_theme_color_dark</item>
+
+        <!-- Toolbar -->
+        <!--<item name="android:windowBackground">@color/c_white</item>-->
+        <item name="android:windowBackground">@null</item>
+        <item name="android:actionBarSize">@dimen/c_toolbarSize</item>
+        <item name="actionBarSize">@dimen/c_toolbarSize</item>
+        <item name="homeAsUpIndicator">@drawable/ic_nav_back_light</item>
+        <item name="android:homeAsUpIndicator">@drawable/ic_nav_back_light</item>
+
+        <!-- Window Animation -->
+        <!--<item name="android:windowAnimationStyle">@style/c_ActivityAnimation</item>-->
+    </style>
+
+    <!-- Activity Animation -->
+    <style name="c_ActivityAnimation" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/c_slide_right_in</item>
+        <item name="android:activityOpenExitAnimation">@anim/c_none</item>
+        <item name="android:activityCloseEnterAnimation">@anim/c_none</item>
+        <item name="android:activityCloseExitAnimation">@anim/c_slide_right_out</item>
+    </style>
+
+    <style name="c_WindowAnimation">
+        <item name="android:windowEnterAnimation">@android:anim/fade_in</item>
+        <item name="android:windowExitAnimation">@android:anim/fade_out</item>
+    </style>
+
+    <!-- Splash Theme -->
+    <style name="c_FullScreenTheme" parent="c_AppTheme">
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <!-- Transparent Theme -->
+    <style name="c_EmptyActivityTheme" parent="c_AppTheme">
+        <item name="android:windowAnimationStyle">@null</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+    <!-- Notification -->
+    <style name="c_NotificationText" parent="@android:style/TextAppearance.StatusBar.EventContent"/>
+
+    <style name="c_NotificationTitle" parent="@android:style/TextAppearance.StatusBar.EventContent.Title"/>
+
+    <!-- Widget Style -->
+    <style name="c_KRProgressBar">
+        <item name="android:maxWidth">@dimen/c_size_32</item>
+        <item name="android:maxHeight">@dimen/c_size_32</item>
+        <item name="android:minWidth">@dimen/c_size_32</item>
+        <item name="android:minHeight">@dimen/c_size_32</item>
+    </style>
+
+    <style name="c_KRProgressBar.Large">
+        <item name="android:maxWidth">@dimen/c_size_48</item>
+        <item name="android:maxHeight">@dimen/c_size_48</item>
+        <item name="android:minWidth">@dimen/c_size_48</item>
+        <item name="android:minHeight">@dimen/c_size_48</item>
+    </style>
+</resources>

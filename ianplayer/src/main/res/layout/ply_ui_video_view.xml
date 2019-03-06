@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+
+    <com.google.android.exoplayer2.ui.AspectRatioFrameLayout
+        android:id="@+id/ply_ui_exo_content_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        >
+        <!-- Video surface will be inserted as the first child of the content frame. -->
+        <View
+            android:id="@+id/ply_ui_exo_shutter"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/c_black"
+            />
+
+        <ImageView
+            android:id="@+id/ply_ui_exo_artwork"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            />
+    </com.google.android.exoplayer2.ui.AspectRatioFrameLayout>
+
+    <View
+        android:id="@+id/ply_ui_exo_controller_placeholder"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+    <com.ian.ianplayer.timebar.SimpleTimeBar
+        android:id="@+id/ply_ui_simple_progress"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_gravity="bottom"
+        app:ply_ui_buffered_color="@color/ply_ui_buffered_color"
+        app:ply_ui_played_color="@color/ply_ui_played_color"
+        app:ply_ui_played_end="@color/ply_ui_played_end"
+        app:ply_ui_played_start="@color/ply_ui_played_start"
+        app:ply_ui_unplayed_color="@color/ply_ui_unplayed_color"
+        />
+
+    <LinearLayout
+        android:id="@+id/ply_ui_end"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/ply_ui_control_mask"
+        android:gravity="center"
+        android:visibility="gone"
+        tools:visibility="gone"
+        >
+
+        <ImageView
+            android:id="@+id/ply_ui_exo_replay"
+            android:layout_width="@dimen/c_size_48"
+            android:layout_height="@dimen/c_size_48"
+            android:contentDescription="@string/ply_ui_exo_controls_replay_description"
+            android:src="@drawable/exo_controls_replay"
+            />
+
+        <Space
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            />
+
+        <ImageView
+            android:id="@+id/ply_ui_exo_share"
+            android:layout_width="@dimen/c_size_48"
+            android:layout_height="@dimen/c_size_48"
+            android:contentDescription="@string/ply_ui_exo_controls_share_description"
+            android:src="@drawable/exo_controls_share"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ply_ui_tips"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/ply_ui_control_mask"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone"
+        tools:visibility="gone"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:gravity="center"
+            android:text="@string/ply_ui_tips"
+            android:textColor="@color/c_white"
+            android:textSize="14sp"
+            />
+
+        <TextView
+            android:id="@+id/ply_ui_exo_force_play"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ply_ui_tips_action"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:text="@string/ply_ui_tips_action"
+            android:textColor="@color/c_white"
+            android:textSize="12sp"
+            />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/ply_ui_loading"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/ply_ui_control_mask"
+        android:visibility="gone"
+        tools:visibility="gone"
+        >
+
+        <ProgressBar
+            style="@style/c_KRProgressBar.Large"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            />
+    </FrameLayout>
+</merge>

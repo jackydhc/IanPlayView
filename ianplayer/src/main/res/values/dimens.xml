@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Default view margins -->
+    <dimen name="c_size_72">72dp</dimen>
+    <dimen name="c_size_64">64dp</dimen>
+    <dimen name="c_size_56">56dp</dimen>
+    <dimen name="c_size_48">48dp</dimen>
+    <dimen name="c_size_40">40dp</dimen>
+    <dimen name="c_size_32">32dp</dimen>
+    <dimen name="c_size_24">24dp</dimen>
+    <dimen name="c_size_16">16dp</dimen>
+    <dimen name="c_size_12">12dp</dimen>
+    <dimen name="c_size_8">8dp</dimen>
+    <dimen name="c_size_4">4dp</dimen>
+    <dimen name="c_size_2">2dp</dimen>
+    <dimen name="c_size_1">1dp</dimen>
+
+    <!-- Toolbar -->
+    <dimen name="c_toolbarSize">45dp</dimen>
+
+    <!-- Font -->
+    <!-- 10 is danger -->
+    <dimen name="c_font_10">10sp</dimen>
+    <dimen name="c_font_12">12sp</dimen>
+    <dimen name="c_font_14">14sp</dimen>
+    <dimen name="c_font_15">15sp</dimen>
+    <!-- 表单文字 -->
+    <dimen name="c_font_16">16sp</dimen>
+    <!-- 列表标题 -->
+    <dimen name="c_font_17">17sp</dimen>
+    <!-- 详情页文字 -->
+    <dimen name="c_font_18">18sp</dimen>
+    <!-- 详情页标题 -->
+    <dimen name="c_font_22">22sp</dimen>
+</resources>
